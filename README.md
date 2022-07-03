@@ -202,6 +202,6 @@ string(value: string, prop: string) {
 },
 ```
 
-I'm curious if you guys like this, found any better solutions or have any questions. Let me know.
+I'm curious if you guys like this, found any better solutions, (god forbid) found any bugs, or have any questions. Let me know.
 
--- Jorrit
+- Jorrit
