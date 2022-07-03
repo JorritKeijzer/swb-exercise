@@ -2,7 +2,7 @@ type SchemaOptionsTypes = 'string' | 'number' | 'boolean' | 'array' | 'object';
 
 interface SchemaOptions {
   type: SchemaOptionsTypes;
-  required?: boolean;
+  required: boolean;
   rule?: (rule: any) => boolean;
 }
 
@@ -45,7 +45,7 @@ const validate = (schema: Schema, data: any): { errors?: string[]; passed: boole
     });
   }
 
-  function adheresToRule(prop: string) {
+  function adheresToRule(prop: string): boolean {
     if (schema[prop]?.rule) {
       const res = schema[prop]?.rule?.(data[prop]);
       if (res) {
@@ -61,7 +61,7 @@ const validate = (schema: Schema, data: any): { errors?: string[]; passed: boole
     }
   }
 
-  const typeCheck = {
+  const typeCheck: { [key: string]: (value: any, prop: string) => boolean } = {
     string(value: string, prop: string) {
       if (typeof value === 'string') {
         console.log(`✔️ Validation: ${prop} is a string`);
