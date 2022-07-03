@@ -41,10 +41,6 @@ describe('Testing validator: with valid data', () => {
   });
 });
 
-// test('Testing validator: with invalid data', () => {
-//   expect(Validator.validate(failSchema, failData)).toBeFalsy();
-// });
-
 describe('Testing validator: with invalid data - Optional data required', () => {
   const data = Validator.validate(testSchema, failDataMissingItem);
 
