@@ -1,6 +1,5 @@
-import { validate, Schema } from './validator';
-
-
+import { validate } from './validator';
+import { userSchema } from './schemas';
 
 const userData = {
   id: 1,

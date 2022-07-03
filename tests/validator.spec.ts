@@ -63,7 +63,6 @@ describe('Testing validator: with invalid data - Optional data required', () => 
 
   test('Length of error array', () => {
     if (data.errors) {
-      // optional was
       expect(data.errors.length).toEqual(1);
     }
   });
@@ -81,7 +80,6 @@ describe('Testing validator: with invalid data - ID data is faulty', () => {
 
   test('Length of error array', () => {
     if (data.errors) {
-      // optional was
       expect(data.errors.length).toEqual(1);
     }
   });
