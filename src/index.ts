@@ -34,7 +34,7 @@ const userSchema: Schema = {
     required: false,
   },
   test: {
-    type: 'string',
+    type: 'object',
     required: false,
   },
 };
@@ -42,9 +42,10 @@ const userSchema: Schema = {
 const userData = {
   id: 1,
   name: 'test',
-  email: 'test@test.nl',
+  email: 'test@test.qp',
   username: 'testingUsername',
   password: '123456',
+  test: { name: 't' },
   followers: [{ name: 'follower' }],
 };
 
