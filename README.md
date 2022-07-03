@@ -10,7 +10,7 @@ The object validator deals with the following types:
 * objects
 * booleans
 
-It is one dimensional but I added an option to add *rules* for values. You can potentially expand this to check values multi-dimensionally or just for checking if the values match conditions.
+It is one dimensional but I added an option to add *rules* for values, and an option to make things *required* or not. You can potentially expand this to check values multi-dimensionally or just for checking if the values match conditions.
 
 ## Setup, starting and testing
 
